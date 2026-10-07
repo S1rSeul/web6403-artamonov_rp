@@ -121,3 +121,21 @@ p {
     margin-bottom: 8px;
     color: #1a1a1a;
 }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+    color: #333;
+}
+
+ul li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+}
