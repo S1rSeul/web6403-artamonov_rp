@@ -10,6 +10,9 @@ body {
     color: #1a1a1a;
     line-height: 1.6;
     font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
@@ -54,7 +57,12 @@ nav a.active {
     font-weight: 600;
 }
 
+main {
+    flex: 1;
+}
+
 .container {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -237,7 +245,6 @@ tr:hover td {
     color: #b8b8b8;
     text-align: center;
     padding: 40px 20px 32px;
-    margin-top: 80px;
     font-size: 14px;
     line-height: 1.6;
 }
