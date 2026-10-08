@@ -139,3 +139,64 @@ ul li::before {
     left: 0;
     color: #4f46e5;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    padding: 14px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f9f9ff;
+}
+
+.col-left {text-align: left;}
+.col-center {text-align: center;}
+.col-right {text-align: right;}
+
+.table-link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed #4f46e5;
+    transition: all 0.2s;
+}
+
+.table-link:hover {
+    color: #3730a3;
+    border-bottom-style: solid;
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.tech-list span {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
