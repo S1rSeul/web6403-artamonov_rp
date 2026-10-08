@@ -200,3 +200,34 @@ tr:hover td {
     color: #555;
     line-height: 1.5;
 }
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.2s;
+}
+
+.contact-item:hover {
+    border-color: #4f46e5;
+    transform: translateX(4px);
+}
+
+.contact-label {
+    font-weight: 600;
+    min-width: 100px;
+    color: #4f46e5;
+}
