@@ -34,10 +34,12 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 28px;
     font-weight: 700;
     color: #4f46e5;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a {
