@@ -17,7 +17,7 @@ body {
 
 #header {
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #d4c4b0;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -116,7 +116,6 @@ main section h2:first-child {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 40px;
 }
 
 .avatar {
@@ -174,10 +173,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 24px;
-    background: #fff;
+    margin-bottom: 48px;
+    background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 16px rgba(150, 100, 60, 0.06);
 }
 
 th {
@@ -191,7 +191,7 @@ th {
 
 td {
     padding: 14px 16px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #d4c4b0;
     color: #333;
 }
 
@@ -199,8 +199,18 @@ tr:last-child td {
     border-bottom: none;
 }
 
-tr:hover td {
-    background-color: #f9f9ff;
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover td {
+    background-color: #fdf2e5;
+    color: #2e2620;
+}
+
+tbody tr:hover td:first-child {
+    color: #4f46e5;
+    font-weight: 500;
 }
 
 .col-left {text-align: left;}
