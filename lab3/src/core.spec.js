@@ -164,6 +164,10 @@ describe('Задания core js', () => {
                 false
             );
             assert.equal(
+                core.deepEqual({ a: undefined }, { b: undefined }),
+                false
+            );
+            assert.equal(
                 core.deepEqual(
                     {obj: {arr: [1, 2, 3]}, value: 'null', n: 0},
                     {obj: {arr: [1, 2]}, value: 'null', n: 0}
