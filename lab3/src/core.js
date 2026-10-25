@@ -61,7 +61,15 @@ function factorial(n) {
  * Напишите функцию, которая определяет, является ли число двойкой, возведенной в степень
  * @param {*} n
  */
-function isBinary(n) {}
+function isBinary(n) {
+    if (!Number.isInteger(n) || n <= 0) return false;
+
+    while (n % 2 === 0) {
+        n /= 2;
+    }
+
+    return n === 1;
+}
 
 /**
  * Напишите функцию, которая находит N-е число Фибоначчи
