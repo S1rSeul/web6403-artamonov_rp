@@ -47,7 +47,15 @@ function recSumTo(n) {
  * Напишите функцию, считающую факториал заданного числа
  * @param {*} n
  */
-function factorial(n) {}
+function factorial(n) {
+    if (!Number.isInteger(n) || n < 0) return NaN;
+
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
 
 /**
  * Напишите функцию, которая определяет, является ли число двойкой, возведенной в степень
