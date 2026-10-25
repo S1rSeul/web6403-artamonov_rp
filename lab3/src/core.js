@@ -157,7 +157,56 @@ function sequence(start = 0, step = 1) {
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 33], text: 'text'}) // true
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 3], text: 'text2'}) // false
  */
-function deepEqual(firstObject, secondObject) {}
+function deepEqual(firstObject, secondObject) {
+    if (firstObject === secondObject) {
+        return true;
+    }
+
+    if (
+        typeof firstObject === 'number' &&
+        typeof secondObject === 'number' &&
+        Number.isNaN(firstObject) &&
+        Number.isNaN(secondObject)
+    ) {
+        return true;
+    }
+
+    if (
+        firstObject === null ||
+        secondObject === null ||
+        typeof firstObject !== 'object' ||
+        typeof secondObject !== 'object'
+    ) {
+        return false;
+    }
+
+    if (Array.isArray(firstObject) !== Array.isArray(secondObject)) {
+        return false;
+    }
+
+    if (firstObject.length !== secondObject.length) {
+        return false;
+    }
+
+    const firstKeys = Object.keys(firstObject);
+    const secondKeys = Object.keys(secondObject);
+
+    if (firstKeys.length !== secondKeys.length) {
+        return false;
+    }
+
+    for (const key of firstKeys) {
+        if (!Object.prototype.hasOwnProperty.call(secondObject, key)) {
+            return false;
+        }
+
+        if (!deepEqual(firstObject[key], secondObject[key])) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 module.exports = {
     isInteger,
