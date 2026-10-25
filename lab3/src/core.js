@@ -104,7 +104,18 @@ function fibonacci(n) {
  * console.log(sumFn(5)) - 15
  * console.log(sumFn(3)) - 18
  */
-function getOperationFn(initialValue, operatorFn) {}
+function getOperationFn(initialValue, operatorFn) {
+    let storedValue = initialValue;
+
+    return function (newValue) {
+        if (typeof operatorFn !== 'function') {
+            return initialValue;
+        }
+
+        storedValue = operatorFn(storedValue, newValue);
+        return storedValue;
+    };
+}
 
 /**
  * Напишите функцию создания генератора арифметической последовательности.
