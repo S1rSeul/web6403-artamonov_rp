@@ -9,7 +9,13 @@ function isInteger(n) {
 /**
  * Напишите функцию, которая возвращает массив четных чисел от 2 до 20 включительно
  */
-function even() {}
+function even() {
+    const result = [];
+    for (let i = 2; i <= 20; i += 2) {
+        result.push(i);
+    }
+    return result;
+}
 
 /**
  * Напишите функцию, считающую сумму чисел до заданного используя цикл
