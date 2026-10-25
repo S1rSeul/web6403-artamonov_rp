@@ -75,7 +75,23 @@ function isBinary(n) {
  * Напишите функцию, которая находит N-е число Фибоначчи
  * @param {*} n
  */
-function fibonacci(n) {}
+function fibonacci(n) {
+    if (!Number.isInteger(n) || n < 0) return NaN;
+
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+
+    let prev = 0;
+    let curr = 1;
+
+    for (let i = 2; i <= n; i++) {
+        const next = prev + curr;
+        prev = curr;
+        curr = next;
+    }
+
+    return curr;
+}
 
 /** Напишите функцию, которая принимает начальное значение и функцию операции
  * и возвращает функцию - выполняющую эту операцию.
