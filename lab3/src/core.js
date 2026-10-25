@@ -21,7 +21,16 @@ function even() {
  * Напишите функцию, считающую сумму чисел до заданного используя цикл
  * @param {*} n
  */
-function sumTo(n) {}
+function sumTo(n) {
+    if (!Number.isInteger(n)) return NaN;
+    if (n <= 0) return 0;
+
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
 
 /**
  * Напишите функцию, считающую сумму чисел до заданного используя рекурсию
