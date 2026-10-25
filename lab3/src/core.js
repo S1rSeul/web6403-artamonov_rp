@@ -36,7 +36,12 @@ function sumTo(n) {
  * Напишите функцию, считающую сумму чисел до заданного используя рекурсию
  * @param {*} n
  */
-function recSumTo(n) {}
+function recSumTo(n) {
+    if (!Number.isInteger(n)) return NaN;
+    if (n <= 0) return 0;
+
+    return n + recSumTo(n - 1);
+}
 
 /**
  * Напишите функцию, считающую факториал заданного числа
