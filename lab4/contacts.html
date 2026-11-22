@@ -5,44 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<header id="header">
-    <div class="header-inner">
-        <a href="index.html" class="logo">Roman Artamonov</a>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">Обо мне</a>
-            <a href="projects.html">Мои проекты</a>
-            <a href="contacts.html" class="active">Контакты</a>
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo">Roman Artamonov</a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__link">Главная</a>
+            <a href="about.html" class="header__link">Обо мне</a>
+            <a href="projects.html" class="header__link">Мои проекты</a>
+            <a href="contacts.html" class="header__link header__link--active">Контакты</a>
         </nav>
     </div>
 </header>
 
 <main class="container">
-    <h1>Контакты</h1>
-    <p>Связь📞</p>
+    <h1 class="page-title">Контакты</h1>
+    <p>Связь 📞 — выбирайте удобный способ или отправьте сообщение через форму ниже.</p>
 
     <div class="contact-list">
-        <a href="mailto:rartamon17@gmail.com" class="contact-item">
-            <span class="contact-label">Email</span>
-            <span>rartamon17@gmail.com</span>
+        <a href="mailto:rartamon17@gmail.com" class="contact-list__item">
+            <span class="contact-list__label">Email</span>
+            <span class="contact-list__value">rartamon17@gmail.com</span>
         </a>
-        <a href="https://t.me/SirSeul" class="contact-item">
-            <span class="contact-label">Telegram</span>
-            <span>@SirSeul</span>
+        <a href="https://t.me/SirSeul" class="contact-list__item">
+            <span class="contact-list__label">Telegram</span>
+            <span class="contact-list__value">@SirSeul</span>
         </a>
-        <a href="https://github.com/S1rSeul" class="contact-item">
-            <span class="contact-label">GitHub</span>
-            <span>S1rSeul</span>
+        <a href="https://github.com/S1rSeul" class="contact-list__item">
+            <span class="contact-list__label">GitHub</span>
+            <span class="contact-list__value">S1rSeul</span>
         </a>
     </div>
 </main>
 
-<footer id="footer">
-    <p>© 2026 Роман Артамонов</p>
-    <p class="footer-note">Сделано на <a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a> и <a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a> в рамках курса Web-разработки</p>
+<footer class="footer">
+    <p class="footer__text">© 2026 Роман Артамонов</p>
+    <p class="footer__note">
+        Сделано на
+        <a class="footer__link" href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a> и
+        <a class="footer__link" href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a>
+        в рамках курса Web-разработки
+    </p>
 </footer>
 
 </body>

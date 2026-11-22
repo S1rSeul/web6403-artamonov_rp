@@ -8,59 +8,64 @@
 </head>
 <body>
 
-<header id="header">
-    <div class="header-inner">
-        <a href="index.html" class="logo">Roman Artamonov</a>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html" class="active">Обо мне</a>
-            <a href="projects.html">Мои проекты</a>
-            <a href="contacts.html">Контакты</a>
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo">Roman Artamonov</a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__link">Главная</a>
+            <a href="about.html" class="header__link header__link--active">Обо мне</a>
+            <a href="projects.html" class="header__link">Мои проекты</a>
+            <a href="contacts.html" class="header__link">Контакты</a>
         </nav>
     </div>
 </header>
 
 <main class="container">
-    <h1>Обо мне</h1>
+    <h1 class="page-title">Обо мне</h1>
 
-    <section>
-        <h2>Биография</h2>
-        <p>Меня зовут Роман, я студент 4-го курса направления <span class="accent">"Прикладная математика и информатика"</span>.
+    <section class="section">
+        <h2 class="section__title">Биография</h2>
+        <p>Меня зовут Роман, я студент 4-го курса направления <span class="text-accent">"Прикладная математика и информатика"</span>.
             За время учебы успел попробовать разные IT направления, использовать разные языки и технологии, но в итоге планирую связать свою жизнь и карьеру
-            с <span class="accent">Java-разработкой</span>.</p>
+            с <span class="text-accent">Java-разработкой</span>.</p>
         <p>На данный момент уделяю основное время учебе и самостоятельному изучению технологий, которые пригодятся в работе.</p>
     </section>
 
-    <section>
-        <h2>Почему <span class="accent">IT</span>?</h2>
+    <section class="section">
+        <h2 class="section__title">Почему <span class="text-accent">IT</span>?</h2>
         <p>Мой путь в технологии начался в 6 лет — именно тогда у меня появился первый компьютер. С тех пор это стало моей главной страстью.</p>
         <p>Мне всегда была интересна информатика. Без технологий я уже не мыслю свою жизнь, поэтому вопрос «кем быть?» передо мной никогда не стоял. Я просто не мог не связать свою судьбу с IT.</p>
     </section>
 
-    <section>
-        <h2>Чем я занимаюсь</h2>
-        <ul>
-            <li>Учусь на 4-м курсе, работаю над различными проектами и готовлюсь к диплому</li>
-            <li>Изучаю Java, экосистему Spring и смежные технологии</li>
-            <li>Работаю над учебными и личными проектами</li>
-            <li>Начал практиковаться во фронтенде (Web😍)</li>
+    <section class="section">
+        <h2 class="section__title">Чем я занимаюсь</h2>
+        <ul class="list">
+            <li class="list__item">Учусь на 4-м курсе, работаю над различными проектами и готовлюсь к диплому</li>
+            <li class="list__item">Изучаю Java, экосистему Spring и смежные технологии</li>
+            <li class="list__item">Работаю над учебными и личными проектами</li>
+            <li class="list__item">Начал практиковаться во фронтенде (Web😍)</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Хобби</h2>
+    <section class="section">
+        <h2 class="section__title">Хобби</h2>
         <div class="card">
-            <h3>Компьютерные игры</h3>
-            <p>Мое главное и, пожалуй, единственное (что не должно удивлять после прочитанного сверху) хобби. Помогает переключиться и отдохнуть, отстраниться от всего происходящего вокруг.</p>
-            <p>Люблю как хорошие одиночные проекты, так и посидеть с друзьями в очередном френдслопе🤗</p>
+            <h3 class="card__title">Компьютерные игры</h3>
+            <p class="card__text">Мое главное и, пожалуй, единственное (что не должно удивлять после прочитанного сверху) хобби. Помогает переключиться и отдохнуть, отстраниться от всего происходящего вокруг.</p>
+            <p class="card__text">Люблю как хорошие одиночные проекты, так и посидеть с друзьями в очередном френдслопе🤗</p>
         </div>
     </section>
 
 </main>
 
-<footer id="footer">
-    <p>© 2026 Роман Артамонов</p>
-    <p class="footer-note">Сделано на <a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a> и <a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a> в рамках курса Web-разработки</p>
+<footer class="footer">
+    <p class="footer__text">© 2026 Роман Артамонов</p>
+    <p class="footer__note">
+        Сделано на
+        <a class="footer__link" href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a> и
+        <a class="footer__link" href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a>
+        в рамках курса Web-разработки
+    </p>
 </footer>
 
 </body>
